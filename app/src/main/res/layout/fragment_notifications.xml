@@ -7,11 +7,30 @@
     tools:context=".ui.notifications.NotificationsFragment"
     android:orientation="vertical">
 
-
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    app:cardElevation="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/purple_700"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
  <com.google.android.material.tabs.TabLayout
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:id="@+id/tabLayout">
+     android:id="@+id/tabLayout"
+     app:tabSelectedTextColor="@color/black"
+     >
 
  </com.google.android.material.tabs.TabLayout>
 
